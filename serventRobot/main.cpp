@@ -1,6 +1,5 @@
 #include <iostream>
 #include <string>
-#include <utility>
 #include <vector>
 using namespace std;
 
@@ -23,7 +22,7 @@ point input(vector<vector<point> >& map, int& initEnergy){
     point start;
     map.assign(n, vector<point>(m));
     for(int i=0; i<n; i++)
-        for(int j=0; j<0; j++){
+        for(int j=0; j<m; j++){
             char tmp; cin>>tmp;
             point p;
             p.x=i; p.y=j;
